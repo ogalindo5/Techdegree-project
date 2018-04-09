@@ -4,35 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Lato,Open+Sans,Oswald,Roboto,Roboto+Condensed" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
   <title>Portfolio</title>
-  <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
   <div class="container clearfix">
-    <header id="home" class="main-header clearfix">
+    <header class="main-header clearfix">
 
-        <h1 class="name">Oscar Galindo</h1>
-        <nav class="main-nav">
-          <li><a href="#home">HOME</a></li>
-          <li><a href="#portfolio">PORTFOLIO</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-        </nav>
+      <h1 class="name">Oscar Galindo</h1>
+       <nav class="main-nav">
+         <ul id="home">
+           <li><a href="#home">HOME</a></li>
+           <li><a href="#portfolio">PORTFOLIO</a></li>
+           <li><a href="#contact">CONTACT</a></li>
+         </ul>
+       </nav>
 
-      </header>
+    </header>
 
+     <div class="banner clearfix">
+       <img src="images/responsive-layout-profile.png" alt="Portfolio image" class="portfolio-img clearfix">
+       <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and am excited to put all my skills to use!</p>
+     </div>
 
-         <div class="banner clearfix">
-          <img src="images/responsive-layout-profile.png" alt="profile-picture" class="profile-picture clearfix">
-            <p>Hi!  I'm an aspiring front-end developer who is fascinated by responsive design and css.  I am in the process of completing a degree in front-end web developement at Treehouse and am excited to put my skills to the test!</p>
-         </div>
 
      <div id="portfolio" class=" portfolio-section clearfix">
-      <section id="#portfolio portfolio-order clearfix">
+      <section id="portfolio-order clearfix">
        <h1>PORTFOLIO</h1>
 
 
@@ -74,53 +73,49 @@
       </section>
     </div>
 
+    <div class="about clearfix">
+
+      <h1>ABOUT</h1>
+    <div class="about-section col">
+
+     <h2>Skills</h2>
+     <p>I currently know HTML and CSS.  I will soon be taking on JavaScript to expand my breadth of knowledge.</p>
+   </div>
+
+    <div class="about-section col">
+     <h2>Interest</h2>
+     <p>I currently know HTML and CSS.  I will soon be taking on JavaScript to expand my breadth of knowledge.</p>
+   </div>
 
 
-    <div id="about" class="about container clearfix">
+</div>
 
-           <h1>ABOUT</h1>
-         <div class="about-section col">
+<div id="contact" class="main-contact t-border">
+			<h1>CONTACT</h1>
+			<p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+			<p>Phone &nbsp; <strong><a href="tel:+7327792087">732-779-2087</a></strong></p>
+			<p>Email &nbsp; <strong><a href="mailto:ogalindo5@aol.com">ogalindo5.com</a></strong></p>
 
-          <h2>Skills</h2>
-          <p>I currently know HTML and CSS.  I will soon be taking on JavaScript to expand my breadth of knowledge.</p>
-        </div>
-
-         <div class="about-section col">
-          <h2>Interest</h2>
-          <p>I currently know HTML and CSS.  I will soon be taking on JavaScript to expand my breadth of knowledge.</p>
-        </div>
-
-
-    </div>
-
-    <div class="contact container clearfix">
-         <div id="contact" class="info-section t-border clearfix">
-           <h1>CONTACT</h1>
-           <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-           <li>Phone </li>
-           <li><a href="tel:7324157785">(732) 471-7785</a></li>
-
-
-         <div class="email-section clearfix">
-           <li>Email</li>
-           <li><a href="mailto:ogalindo5@aol.com">ogalindo5@aol.com</a></li>
-        </div>
-        </div>
-        </div>
+		</div>
 
 
 
-    <footer class="main-footer  clearfix">
-      <div class="container t-border clearfix">
-        <h1 class="name">Oscar Galindo</h1>
-        <nav class="main-nav">
+
+    <footer class="main-footer clearfix">
+      <div class="t-border clearfix">
+        <h1 class="footer-name clearfix">Oscar Galindo</h1>
+        <nav class="footer-nav clearfix">
+        <ul id="footer-nav" class="clearfix">
           <li><a href="#home">HOME</a></li>
           <li><a href="#portfolio">PORTFOLIO</a></li>
-          <li><a href="#about">ABOUT</a></li>
           <li><a href="#contact">CONTACT</a></li>
+       </ul>
+         <a href="#home" id="access_top">BACK TO TOP</a>
+
         </nav>
       </div>
     </footer>
   </div>
-  </div>
+
 </body>
+</html>

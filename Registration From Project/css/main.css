@@ -1,0 +1,330 @@
+/* Global Layout */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Color, Font, Links */
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #384047;
+	width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+
+
+}
+
+#signup p,
+#copyright {
+  color: #6c747c;
+}
+
+p,
+label,
+#state select {
+  font-size: .85em;
+  font-weight: 300;
+}
+
+h3,
+legend {
+  color: #2d3945;
+
+  font-size: 1.17em;
+  font-weight: 700;
+}
+
+header {
+	background-color: #2d3945;
+}
+
+header h3 {
+	color: #fff;
+	text-transform: uppercase;
+	line-height: 70px;
+}
+
+#state select {
+  color: #b3b8bb;
+
+}
+
+select{
+    background: url('../img/select-arrow.png') no-repeat right #ddd;
+    -webkit-appearance: none;
+    background-position: 95%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  font-size: 16px;
+  background-color: #eff0f1;
+  color: #8a97a0;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+button {
+  color: #FFF;
+  background-color: #4ebbb5;
+
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+}
+
+#copyright {
+  text-align: center;
+  font-style: italic;
+}
+
+
+/* Page */
+
+.wrap {
+	margin: 0 auto;
+	max-width: 290px;
+}
+
+.lines {
+  height: 9px;
+  border-top: 4px solid #2d3945;
+  border-bottom: 2px solid #2d3945;
+}
+
+.line {
+  margin: 10px 0 5px;
+  height: 2px;
+  border-bottom: 2px solid #2d3945;
+}
+
+.line,
+.lines {
+  width: 100%;
+}
+
+
+/* Header */
+
+header {
+	height: 70px;
+}
+
+header h3 {
+	margin: 0;
+}
+
+header,
+#signup {
+	text-align: center;
+}
+
+/* Content and Footer
+*********************/
+
+/* Signup for.. */
+
+#signup h3 {
+  margin: 30px 0 10px;
+}
+
+#signup p {
+  margin: 0 0 35px;
+}
+
+/* Form Styling */
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+legend {
+  padding: 30px 0;
+  border: none;
+  margin: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form {
+  margin: 0 auto;
+}
+
+form,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea,
+button {
+  width: 100%;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+	height: 50px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+	border: none;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 0;
+  outline: 0;
+  margin-bottom: 20px;
+}
+
+/* Contact Information */
+
+#zip_code {
+  height: 50px;
+  width: 150px;
+}
+
+/* Newsletter + Comments
+***********************/
+
+#newsletter label {
+  display: inline-block;
+}
+
+.group {
+  margin: 10px 0 20px;
+}
+
+  /* Checkbox and Radio */
+
+
+  input[type="radio"],
+  input[type="checkbox"]{
+    /* Hide original inputs */
+    visibility: hidden;
+    position: absolute;
+  }
+
+  input[type="radio"] + label:before,
+  input[type="checkbox"] + label:before{
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+    content: " ";
+    display: inline-block;
+    vertical-align: text-top;
+
+    border: none;
+    background-color: #eff0f1;
+  }
+
+
+    /* RADIO AND CHECKBOX STYLES */
+    input[type=radio] + label:before{
+      border-radius:50%;
+    }
+    input[type=checkbox] + label:before{
+      border-radius:4px;
+    }
+
+  input[type="checkbox"]:checked + label:before {
+    background:url('../img/check.png') left top no-repeat;
+  }
+
+   input[type="radio"]:checked + label:before {
+    background:url('../img/radio.png') center no-repeat;
+    border: #46698b solid 2px;
+
+  }
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+/* button and copyright */
+
+input:focus,
+textarea:focus {
+  border: #46698b solid 2px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  border-radius: 5px;
+  height: 60px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+
+#copyright {
+	margin-bottom: 200px;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 760px) {
+
+  body {
+    background-size: 100%;
+  }
+
+  .wrap {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+
+  /* 760px: Signup */
+
+  #signup h3 {
+    margin: 68px 0 10px;
+    font-size: 1.45em;
+  }
+
+  #signup p {
+    margin: 0 0 50px;
+  }
+
+  /* 760px: Forms */
+
+  legend {
+    padding-top: 50px;
+  }
+
+  label {
+    font-weight: 400;
+  }
+
+  #contact_info label {
+    width: 150px;
+    line-height: 50px;
+    display: inline-block;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  #state,
+  select {
+    width: 440px;
+    display: inline-block;
+  }
+}
